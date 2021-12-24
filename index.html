@@ -3,35 +3,39 @@
     <head>
         <title>Input Validation</title>
         <meta charset="utf-8">
+        <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body>
-        <h1>Input Validation</h1>
+        <h1 class="centered">Input Validation</h1>
         <div class="container">
             <form>
                 <label>
                     Email
-                    <input type="email">
+                    <input type="email" id="email" required>
+                    <span class="error" aria-live="polite"></span>
                 </label>
 
                 <label>
                     Country
-                    <input type="text">
+                    <input type="text" id="country" required>
                 </label>
 
                 <label>
                     Zip Code
-                    <input type="text">
+                    <input type="text" id="zipcode" required pattern="[0-9]{5}|[0-9]{5}-[0-9]{4}">
                 </label>
 
                 <label>
                     Password
-                    <input type="password">
+                    <input type="password" id="password" required minlength="8">
                 </label>
 
                 <label>
                     Password (Confirmation)
-                    <input type="password">
+                    <input type="password" id="passwordConfirmation" required minlength="8">
                 </label>
+
+                <input type="submit">
             </form>
         </div>
         
