@@ -10,14 +10,19 @@ submitButton.addEventListener('click', function() {
 
 
 email.addEventListener('input', validateEmail);
+email.addEventListener('blur', validateEmail);
 
 country.addEventListener('input', validateCountry);
+country.addEventListener('blur', validateCountry);
 
 zipCode.addEventListener('input', validateZipCode);
+zipCode.addEventListener('blur', validateZipCode);
 
 password.addEventListener('input', validatePassword);
+password.addEventListener('blur', validatePassword);
 
 passwordConfirmation.addEventListener('input', validateConfirmation);
+passwordConfirmation.addEventListener('blur', validateConfirmation);
 
 
 
